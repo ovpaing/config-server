@@ -1,17 +1,15 @@
-server:
-  port: 8082
-
 spring:
   application:
     name: product-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/product_db?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/spring
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
+    generate-ddl: true
     hibernate:
       ddl-auto: update
     show-sql: true
